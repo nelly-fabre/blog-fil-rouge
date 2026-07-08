@@ -10,6 +10,7 @@
 </head>
 
 <body class="bg-dark">
+    <?php require_once(__DIR__ . '/header.php'); ?>
     <h1 class="my-5 text-center text-light">Collection de figurines</h1>
 
 
