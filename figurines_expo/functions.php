@@ -21,10 +21,10 @@ $figurines = $lastFigurines->fetchAll();
 // Page Create_post.php
 
 //Page submit-login.php
-$sqlQuerySell = 'SELECT * FROM `vendeurs`';
-$sellBdd = $mysqlClient->prepare($sqlQuerySell);
-$sellBdd->execute();
-$sellers = $sellBdd->fetchAll();
+$sqlQueryAdm = 'SELECT * FROM `admins`';
+$admBdd = $mysqlClient->prepare($sqlQueryAdm);
+$admBdd->execute();
+$admins = $admBdd->fetchAll();
 
 
 //Redirection de page

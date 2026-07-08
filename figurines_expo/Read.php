@@ -1,5 +1,4 @@
 <?php
-session_start();
 require(__DIR__ . '/connect.php');
 
 if (!isset($_SESSION['LOGGED_USER'])) {

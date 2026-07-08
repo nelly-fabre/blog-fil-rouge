@@ -1,5 +1,5 @@
 <?php
-session_start();
+
 include(__DIR__ . '/connect.php');
 include(__DIR__ . '/functions.php');
 ?>
@@ -41,8 +41,8 @@ include(__DIR__ . '/functions.php');
                             <?php endif; ?>
 
                             <div class="mb-3">
-                                <label for="email" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="email" name="email" required>
+                                <label for="login" class="form-label">Login</label>
+                                <input type="text" class="form-control" id="login" name="login" required>
                             </div>
 
                             <div class="mb-3">

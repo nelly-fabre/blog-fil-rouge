@@ -1,5 +1,5 @@
 <?php
-session_start();
+
 include(__DIR__ . '/connect.php');
 include(__DIR__ . '/functions.php');
 
