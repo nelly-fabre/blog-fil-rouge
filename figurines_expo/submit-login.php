@@ -55,4 +55,4 @@ if (isset($postData['login']) && isset($postData['mdp'])) {
 }
 
 
-redirectToUrl('Read.php');
+redirectToUrl('logout.php');

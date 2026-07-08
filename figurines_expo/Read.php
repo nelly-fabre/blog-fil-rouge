@@ -22,6 +22,13 @@ if (!isset($_SESSION['LOGGED_USER'])) {
 
 <body class="bg-dark">
     <?php require_once(__DIR__ . '/header.php'); ?>
+    <div class="col-4 text-light">
+        <?php if (isset($_SESSION['LOGGED_USER'])) : ?>
+            <strong>Bonjour <?= htmlspecialchars($_SESSION['LOGGED_USER']['login']) ?></strong>
+        <?php endif; ?>
+
+        <p class="mb-0">Nous sommes le <?= date("d/m/Y") ?></p>
+    </div>
     <h1 class="my-5 text-center text-light">Collection de figurines</h1>
 
 
