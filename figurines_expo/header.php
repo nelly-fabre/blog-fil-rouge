@@ -2,7 +2,7 @@
 
     <div class="col-4">
         <?php if (isset($_SESSION['LOGGED_USER'])) : ?>
-            <strong>Bonjour <?= htmlspecialchars($_SESSION['LOGGED_USER']['prenom']) ?></strong>
+            <strong>Bonjour <?= htmlspecialchars($_SESSION['LOGGED_USER']['login']) ?></strong>
         <?php endif; ?>
 
         <p class="mb-0">Nous sommes le <?= date("d/m/Y") ?></p>

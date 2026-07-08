@@ -1,5 +1,6 @@
 <?php
 require(__DIR__ . '/connect.php');
+include(__DIR__ . '/functions.php');
 
 if (!isset($_SESSION['LOGGED_USER'])) {
     header('Location: login.php');
@@ -30,12 +31,7 @@ if (!isset($_SESSION['LOGGED_USER'])) {
     <div class="container">
         <div class="row">
 
-
-
             <?php
-            include(__DIR__ . '/connect.php');
-            include(__DIR__ . '/functions.php');
-
 
             foreach ($figurines as $figurine) {
 
