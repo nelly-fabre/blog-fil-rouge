@@ -56,6 +56,7 @@ if (isset($postData['email']) && isset($postData['mdp'])) {
                 $postData['email'],
                 strip_tags($postData['mdp'])
             );
+            redirectToUrl('login.php');
         }
     }
 

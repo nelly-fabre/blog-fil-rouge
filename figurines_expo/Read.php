@@ -1,3 +1,14 @@
+<?php
+session_start();
+require(__DIR__ . '/connect.php');
+
+if (!isset($_SESSION['LOGGED_USER'])) {
+    header('Location: login.php');
+    exit;
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 

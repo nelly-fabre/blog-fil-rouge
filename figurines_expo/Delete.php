@@ -1,6 +1,7 @@
 <?php
-
+session_start();
 include(__DIR__ . '/connect.php');
+
 
 $getData = $_GET;
 
@@ -33,7 +34,7 @@ if (!isset($getData['id']) || !is_numeric($getData['id'])) {
         <h1>Supprimer l'article</h1>
 
 
-        <form action="Delete_post.php" method="POST">
+        <form action="/Delete_post.php" method="POST">
 
 
             <div class="mb-3 visually-hidden">
