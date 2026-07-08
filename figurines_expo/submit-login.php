@@ -3,6 +3,7 @@
 session_start();
 
 require(__DIR__ . '/connect.php');
+include(__DIR__ . '/functions.php');
 
 $sqlQuerySell = 'SELECT * FROM `vendeurs`';
 $sellBdd = $mysqlClient->prepare($sqlQuerySell);

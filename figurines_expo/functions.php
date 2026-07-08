@@ -1,4 +1,28 @@
 <?php
+
+
+//********************************************************** */
+//Appel de toutes les requetes SQL & nommage des fonctions
+//********************************************************** */
+
+// Page Read.php
+$sqlQuery = '
+SELECT f.id, f.nom, f.licence,f.description, f.date_ajout, v.prix_estime, v.etat
+FROM figurines f
+LEFT JOIN valeur v ON f.id = v.figurine_id
+ORDER BY `f`.`date_ajout`
+DESC;';
+
+$lastFigurines = $mysqlClient->prepare($sqlQuery);
+$lastFigurines->execute();
+$figurines = $lastFigurines->fetchAll();
+
+
+// Page Create_post.php
+
+
+
+//Redirection de page
 function redirectToUrl(string $url): never
 {
 
