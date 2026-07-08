@@ -33,6 +33,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
     </head>
 
     <body class="bg-dark">
+        <?php require_once(__DIR__ . '/header.php'); ?>
 
         <div class="container text-center d-flex flex-wrap justify-content-center">
 

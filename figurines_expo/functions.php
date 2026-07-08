@@ -20,6 +20,11 @@ $figurines = $lastFigurines->fetchAll();
 
 // Page Create_post.php
 
+//Page submit-login.php
+$sqlQuerySell = 'SELECT * FROM `vendeurs`';
+$sellBdd = $mysqlClient->prepare($sqlQuerySell);
+$sellBdd->execute();
+$sellers = $sellBdd->fetchAll();
 
 
 //Redirection de page

@@ -1,17 +1,15 @@
-<div class="container d-flex flex-row justify-content-between align-items-center my-5">
+<div class="container d-flex flex-row justify-content-between align-items-center my-5 bg-warning">
 
 
     <div class="col-4">
-        <!-- Logo cliquable qui renvoie à l'accueil -->
-        <a href="Read.php">
-            <img src="/figurines_expo/img/nezuko.webp" class="w-50" alt=""></a><br> "
+
 
 
         <?php if (isset($_SESSION['LOGGED_USER'])) : echo $_SESSION['LOGGED_USER']['prenom'];
         endif; ?>
 
 
-        Nous somme le <?php echo date("d/m/Y") ?></p>
+        <p class="text-color-light">Nous somme le <?php echo date("d/m/Y") ?></p>
     </div>
 
 
