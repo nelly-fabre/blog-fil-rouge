@@ -1,6 +1,6 @@
 <?php
 
-include('connect.php');
+include(__DIR__ . '/connect.php');
 
 
 if (isset($_GET['id']) && is_numeric($_GET['id'])) {

@@ -3,7 +3,7 @@
 
     <div class="col-4">
         <!-- Logo cliquable qui renvoie à l'accueil -->
-        <a href="/Read.php">
+        <a href="Read.php">
             <img src="/figurines_expo/img/nezuko.webp" class="w-50" alt=""></a><br> "
 
 
@@ -23,7 +23,7 @@
 
             <ul class="list-inline">
                 <li class="list-inline-item">
-                    <a href="/Read.php">Accueil</a>
+                    <a href="Read.php">Accueil</a>
                 </li>
 
                 <li class="list-inline-item">

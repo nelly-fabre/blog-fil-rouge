@@ -1,5 +1,5 @@
 <?php
-include('connect.php');
+include(__DIR__ . '/connect.php');
 
 $postData = $_POST;
 
@@ -86,6 +86,7 @@ if (isset($_FILES['image']) && $_FILES['image']['error'] == 0) {
 <html lang="en">
 
 <head>
+    <?php require_once(__DIR__ . '/head.php'); ?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Création d'article</title>

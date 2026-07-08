@@ -74,9 +74,9 @@ DESC;';
                             </p><br><br><br><br>
 
 
-                            <a class="btn btn-outline-danger" href="/Delete.php?id=<?= htmlspecialchars($figurine['id']) ?>">Supprimer</a>
-                            <a class="btn btn-outline-warning" href="/Update.php?id=<?= htmlspecialchars($figurine['id']) ?>">Modifier</a>
-                            <a class="btn btn-outline-primary" href="/article.php?id=<?= htmlspecialchars($figurine['id']) ?>">En savoir +</a>
+                            <a class="btn btn-outline-danger" href="Delete.php?id=<?= htmlspecialchars($figurine['id']) ?>">Supprimer</a>
+                            <a class="btn btn-outline-warning" href="Update.php?id=<?= htmlspecialchars($figurine['id']) ?>">Modifier</a>
+                            <a class="btn btn-outline-primary" href="article.php?id=<?= htmlspecialchars($figurine['id']) ?>">En savoir +</a>
                         </div>
                     </div>
                 </div>
