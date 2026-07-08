@@ -35,3 +35,34 @@ function redirectToUrl(string $url): never
 
     exit();
 }
+
+
+
+/**
+ * SLUGIFY DE L'URL
+ */
+
+function slugify($text)
+{
+    // Étape 1 : Remplace tous les caractères non alphanumériques par un tiret
+    // \pL = lettres Unicode (pour gérer les accents)
+    // \d = chiffres
+    $text = preg_replace('~[^\pL\d]+~u', '-', $text);
+
+    // Étape 2 : Translitération (convertit les caractères accentués en ASCII)
+    // é devient e, à devient a, etc.
+    $text = iconv('utf-8', 'us-ascii//TRANSLIT', $text);
+
+    // Étape 3 : Supprime les caractères indésirables qui restent
+    // On garde uniquement les tirets et les caractères alphanumériques
+    $text = preg_replace('~[^-\w]+~', '', $text);
+
+    // Étape 4 : Supprime les tirets en début et fin de chaîne
+    $text = trim($text, '-');
+
+    // Étape 5 : Convertit tout en minuscules pour uniformiser
+    $text = strtolower($text);
+
+    // Si après tout ça le texte est vide, on retourne 'n-a' (non applicable)
+    return empty($text) ? 'n-a' : $text;
+}

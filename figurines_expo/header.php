@@ -5,7 +5,7 @@
     <div class="col-8 text-end">
         <ul class="list-inline mb-0">
             <li class="list-inline-item">
-                <a href="Read.php">Accueil</a>
+                <a href="<?= BASE_URL ?>/Read.php">Accueil</a>
             </li>
             <li class="list-inline-item">
                 <a href="#">Contact</a>
@@ -13,9 +13,9 @@
             <li class="list-inline-item">
                 <button class="btn btn-outline-primary">
                     <?php if (isset($_SESSION['LOGGED_USER'])) : ?>
-                        <a href="index.php">Se déconnecter</a>
+                        <a href="<?= BASE_URL ?>/logout.php">Se déconnecter</a>
                     <?php else : ?>
-                        <a href="login.php">Se connecter</a>
+                        <a href="<?= BASE_URL ?>/login.php">Se connecter</a>
                     <?php endif; ?></button>
             </li>
         </ul>

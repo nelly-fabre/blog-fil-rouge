@@ -1,6 +1,7 @@
 <?php
 
 include(__DIR__ . '/connect.php');
+include(__DIR__ . '/functions.php');
 
 
 if (isset($_GET['id']) && is_numeric($_GET['id'])) {
@@ -53,7 +54,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
 
                 $imagePath = "img/" . $figurine['id'] . ".webp";
                 if (file_exists($imagePath)) {
-                    $image = "$imagePath";
+                    $image = BASE_URL . "/$imagePath";
                 } else {
                     $image = "https://picsum.photos/100/200";
                 }
@@ -82,14 +83,14 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
             <div class="col-12">
 
 
-                <a class="btn btn-primary" role="button" href="Read.php">RETOUR</a>
+                <a class="btn btn-primary" role="button" href="<?= BASE_URL ?>/Read.php">RETOUR</a>
 
                 <div id="shareAlert" class="alert"></div>
             </div>
 
         </div>
 
-        <script src="js/share.js"></script>
+        <script src="<?= BASE_URL ?>/js/share.js"></script>
     </body>
 
     </html>
