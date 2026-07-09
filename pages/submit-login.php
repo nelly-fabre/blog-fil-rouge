@@ -8,6 +8,7 @@ $postData = $_POST;
 if (isset($postData['login']) && isset($postData['mdp'])) {
 
     foreach ($admins as $user) {
+
         if (
             $user['login'] === $postData['login'] &&
             $user['password_hash'] === $postData['mdp']
@@ -17,6 +18,8 @@ if (isset($postData['login']) && isset($postData['mdp'])) {
                 'nom' => $user['nom'],
                 'prenom' => $user['prenom'],
             ];
+            // 🔒 Régénère l'id de session pour éviter la session fixation
+            session_regenerate_id(true);
         }
     }
 

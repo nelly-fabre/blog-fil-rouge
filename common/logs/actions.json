@@ -68,5 +68,47 @@
             "figurine_id": 29
         },
         "ip": "::1"
+    },
+    {
+        "date": "2026-07-09 11:59:50",
+        "utilisateur": "admin1",
+        "action": "deconnexion",
+        "details": [],
+        "ip": "::1"
+    },
+    {
+        "date": "2026-07-09 11:59:58",
+        "utilisateur": "admin1",
+        "action": "connexion_reussie",
+        "details": [],
+        "ip": "::1"
+    },
+    {
+        "date": "2026-07-09 12:03:21",
+        "utilisateur": "admin1",
+        "action": "deconnexion",
+        "details": [],
+        "ip": "::1"
+    },
+    {
+        "date": "2026-07-09 12:03:28",
+        "utilisateur": "admin1",
+        "action": "connexion_reussie",
+        "details": [],
+        "ip": "::1"
+    },
+    {
+        "date": "2026-07-09 12:03:30",
+        "utilisateur": "admin1",
+        "action": "deconnexion",
+        "details": [],
+        "ip": "::1"
+    },
+    {
+        "date": "2026-07-09 12:03:33",
+        "utilisateur": "admin1",
+        "action": "connexion_reussie",
+        "details": [],
+        "ip": "::1"
     }
 ]
