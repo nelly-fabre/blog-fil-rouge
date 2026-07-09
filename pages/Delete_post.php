@@ -25,7 +25,7 @@ $deleteValueStatement->execute([
     'id' => (int)$postData['id'],
 ]);
 
-
+logAction('suppression_figurine', ['figurine_id' => (int) $postData['id']]);
 
 ?>
 

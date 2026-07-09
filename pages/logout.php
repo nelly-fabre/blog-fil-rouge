@@ -1,5 +1,6 @@
 <?php
 require_once(__DIR__ . '/../common/connect.php');
+logAction('deconnexion');
 
 // Vide toutes les données stockées dans la session
 $_SESSION = [];

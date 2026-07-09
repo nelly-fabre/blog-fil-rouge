@@ -4,7 +4,7 @@
 //********************************************************** */
 //Appel de toutes les requetes SQL & nommage des fonctions
 //********************************************************** */
-// Page Read.php
+// Page acceuil.php
 $sqlQuery = '
 SELECT f.id, f.nom, f.licence,f.description, f.date_ajout, v.prix_estime, v.etat
 FROM figurines f

@@ -26,9 +26,11 @@ if (isset($postData['login']) && isset($postData['mdp'])) {
             $postData['login'],
             strip_tags($postData['mdp'])
         );
+        logAction('connexion_echouee', ['login_tente' => $postData['login']]);
         redirectToUrl('connexion');
     }
 
     // ✅ Authentification réussie : on redirige vers la page principale
+    logAction('connexion_reussie');
     redirectToUrl('lire');
 }

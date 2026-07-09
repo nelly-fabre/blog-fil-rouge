@@ -52,6 +52,7 @@ $insertcontenu->execute([
 ]);
 
 $figurine_id = $mysqlClient->lastInsertId();
+logAction('creation_figurine', ['figurine_id' => $figurine_id, 'nom' => $nom]);
 
 $insertvalue->execute([
     'figurine_id' => $figurine_id,

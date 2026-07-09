@@ -1,0 +1,16 @@
+[
+    {
+        "date": "2026-07-09 11:25:57",
+        "utilisateur": "admin1",
+        "action": "deconnexion",
+        "details": [],
+        "ip": "::1"
+    },
+    {
+        "date": "2026-07-09 11:26:03",
+        "utilisateur": "admin1",
+        "action": "connexion_reussie",
+        "details": [],
+        "ip": "::1"
+    }
+]

@@ -60,7 +60,7 @@ $insertValueStatement->execute([
 
 
 ]);
-
+logAction('modification_figurine', ['figurine_id' => $id]);
 ?>
 
 

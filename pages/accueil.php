@@ -1,3 +1,7 @@
+<?php
+require_once(__DIR__ . '/../common/functions.php');
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -22,16 +26,7 @@
         <div class="row">
 
             <?php
-            $sqlQuery = '
-                SELECT f.id, f.nom, f.licence, f.description, f.date_ajout, v.prix_estime, v.etat
-                FROM figurines f
-                LEFT JOIN valeur v ON f.id = v.figurine_id
-                ORDER BY f.date_ajout DESC
-                LIMIT 3';
 
-            $lastFigurines = $mysqlClient->prepare($sqlQuery);
-            $lastFigurines->execute();
-            $figurines = $lastFigurines->fetchAll();
 
             foreach ($figurines as $figurine) :
 
@@ -50,7 +45,7 @@
                             <p><strong>Estimation : <?= htmlspecialchars($figurine['prix_estime'] ?? '') ?> €</strong></p>
                             <p>État : <?= htmlspecialchars($figurine['etat'] ?? '') ?></p>
 
-                            <p><?= htmlspecialchars($figurine['description']) ?></p>
+                            <p><?= htmlspecialchars(truncateString($figurine['description'])) ?></p>
                         </div>
                     </div>
                 </div>

@@ -68,7 +68,7 @@ if (!isset($_SESSION['LOGGED_USER'])) {
                             <br>
                             <hr>
 
-                            <?= htmlspecialchars($figurine['description']); ?>
+                            <?= htmlspecialchars(truncateString($figurine['description'])); ?>
 
                             <p><strong>Date d'ajout de l'article : </strong><?= htmlspecialchars($figurine['date_ajout']); ?>
 
