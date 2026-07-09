@@ -34,7 +34,7 @@ if (!isset($getData['id']) || !is_numeric($getData['id'])) {
         <h1>Supprimer l'article</h1>
 
 
-        <form action="supprimer" method="POST">
+        <form action="supprimer-post" method="POST">
 
 
             <div class="mb-3 visually-hidden">

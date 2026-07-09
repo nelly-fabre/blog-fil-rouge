@@ -51,9 +51,9 @@ if (!isset($_SESSION['LOGGED_USER'])) {
                             <h2 class='card-title' style="color: #ff5e00"><?= htmlspecialchars(($figurine['nom'])) ?></h2>
 
                             <?php
-                            $imagePath = __DIR__ . '/../public/img/' . $figurine['id'] . ".webp";
+                            $imagePath = __DIR__ . '/../public/assets/img/' . $figurine['id'] . '.webp';
                             if (file_exists($imagePath)) {
-                                $image = "$imagePath";
+                                $image = '/assets/img/' . $figurine['id'] . '.webp';
                             } else {
                                 $image = "https://picsum.photos/100/250";
                             }

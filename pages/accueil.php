@@ -35,8 +35,8 @@
 
             foreach ($figurines as $figurine) :
 
-                $imagePath = __DIR__ . '/../public/img/' . $figurine['id'] . '.webp';
-                $image = file_exists($imagePath) ? 'img/' . $figurine['id'] . '.webp' : "https://picsum.photos/300/200";
+                $imagePath = __DIR__ . '/../public/assets/img/' . $figurine['id'] . '.webp';
+                $image = file_exists($imagePath) ? '/assets/img/' . $figurine['id'] . '.webp' : "https://picsum.photos/300/200";
             ?>
 
                 <div class="col-md-4 mb-4">

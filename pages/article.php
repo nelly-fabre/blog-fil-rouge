@@ -54,7 +54,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
                 // ============================================================
 
 
-                $imagePath = __DIR__ . '/../public/img/' . $figurine['id'] . '.webp';
+                $imagePath = __DIR__ . '/../public/assets/img/' . $figurine['id'] . '.webp';
                 if (file_exists($imagePath)) {
                     $image = '/img/' . $figurine['id'] . '.webp';
                 } else {
@@ -75,6 +75,11 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
 
                 echo "<p>" . htmlspecialchars($figurine['description']) . "</p>";
 
+                echo "<button class='btn btn-warning col-2 d-block mx-auto' id=\"webShare\" 
+                        data-title=\"" . htmlspecialchars($figurine['nom']) . "\" 
+                        data-text=\"Découvrez " . htmlspecialchars($figurine['nom']) . " sur notre site\" 
+                        data-url=\"" . htmlspecialchars("http://localhost/figurine/{$figurine['id']}-" . slugify($figurine['nom'])) . "\">Partagez</button>";
+
                 echo "</div>";
             } else {
                 echo "<p>Figurine non trouvée.</p>";
@@ -92,7 +97,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
 
         </div>
 
-        <script src="/js/share.js"></script>
+        <script src="/assets/js/share.js"></script>
     </body>
 
     </html>

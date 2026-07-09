@@ -4,7 +4,6 @@
 //********************************************************** */
 //Appel de toutes les requetes SQL & nommage des fonctions
 //********************************************************** */
-
 // Page Read.php
 $sqlQuery = '
 SELECT f.id, f.nom, f.licence,f.description, f.date_ajout, v.prix_estime, v.etat
@@ -18,16 +17,37 @@ $lastFigurines->execute();
 $figurines = $lastFigurines->fetchAll();
 
 
-// Page Create_post.php
-
+//********************************* */
 //Page submit-login.php
+//********************************* */
 $sqlQueryAdm = 'SELECT * FROM `admins`';
 $admBdd = $mysqlClient->prepare($sqlQueryAdm);
 $admBdd->execute();
 $admins = $admBdd->fetchAll();
 
 
+
+
+
+//********************************* */
+//Tronquer un texte
+//********************************* */
+function truncateString($string, $length = 20)
+{
+    // strlen() : compte le nombre de caractères
+    if (strlen($string) > $length) {
+        // substr() : extrait une partie de la chaîne (de 0 à $length)
+        return substr($string, 0, $length) . ' (...)';
+    }
+    // Si le texte est assez court, on le retourne tel quel
+    return $string;
+}
+
+
+
+//********************************* */
 //Redirection de page
+//********************************* */
 function redirectToUrl(string $url): never
 {
 
@@ -38,10 +58,9 @@ function redirectToUrl(string $url): never
 
 
 
-/**
- * SLUGIFY DE L'URL
- */
-
+//********************************* */
+// Slugify de l'url
+//********************************* */
 function slugify($text)
 {
     // Étape 1 : Remplace tous les caractères non alphanumériques par un tiret
