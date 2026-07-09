@@ -33,7 +33,9 @@ $logs = array_reverse($logs);
     <?php require_once(__DIR__ . '/../common/header.php'); ?>
 
     <div class="container my-5">
-
+        <div class="d-flex justify-content-end">
+            <a href="/lire" class="btn btn-primary ">RETOUR</a>
+        </div>
         <h1 class="mb-4">Journal des actions</h1>
 
         <?php if (empty($logs)) : ?>
@@ -79,7 +81,7 @@ $logs = array_reverse($logs);
 
         <?php endif; ?>
 
-        <a href="/lire" class="btn btn-primary">RETOUR</a>
+
 
     </div>
 
