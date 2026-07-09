@@ -1,7 +1,7 @@
 <?php
 
-include(__DIR__ . '/connect.php');
-include(__DIR__ . '/functions.php');
+include(__DIR__ . '/common/connect.php');
+include(__DIR__ . '/common/functions.php');
 
 
 $postData = $_POST;
@@ -34,7 +34,7 @@ $deleteValueStatement->execute([
 <html lang="fr">
 
 <head>
-    <?php require_once(__DIR__ . '/head.php'); ?>
+    <?php require_once(__DIR__ . '/common/head.php'); ?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Article supprimé</title>
@@ -46,7 +46,7 @@ $deleteValueStatement->execute([
     <p>Article supprimé avec succés</p> <br>
 
 
-    <a class="btn btn-primary" role="button" href="Read.php">RETOUR</a>
+    <a class="btn btn-primary" role="button" href="pages/Read.php">RETOUR</a>
 </body>
 
 </html>

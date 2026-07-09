@@ -1,6 +1,6 @@
 <?php
 
-require(__DIR__ . '/connect.php');
+require(__DIR__ . '/../common/connect.php');
 ?>
 
 <!DOCTYPE html>
@@ -15,7 +15,7 @@ require(__DIR__ . '/connect.php');
 
 <body>
 
-    <?php require(__DIR__ . '/header.php'); ?>
+    <?php require(__DIR__ . '/../common/header.php'); ?>
 
     <div class="container">
 
@@ -70,14 +70,14 @@ require(__DIR__ . '/connect.php');
                 <h3>Envie d'en voir plus ?</h3>
                 <p class="mb-4">Connectez-vous pour accéder à l'intégralité de notre catalogue de figurines.</p>
                 <div>
-                    <a href="login.php" class="btn btn-primary">Se connecter</a>
+                    <a href="pages/login.php" class="btn btn-primary">Se connecter</a>
                 </div>
             </div>
 
         <?php else : ?>
 
             <div class="text-center my-5">
-                <a href="Read.php" class="btn btn-primary">Voir tout le catalogue</a>
+                <a href="pages/Read.php" class="btn btn-primary">Voir tout le catalogue</a>
             </div>
 
         <?php endif; ?>

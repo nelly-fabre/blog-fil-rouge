@@ -1,6 +1,6 @@
 <?php
 
-include(__DIR__ . '/connect.php');
+include(__DIR__ . '/common/connect.php');
 
 $postData = $_POST;
 
@@ -69,7 +69,7 @@ if (isset($_FILES['image']) && $_FILES['image']['error'] == 0) {
     if ($typeMime === "image/webp") {
 
 
-        $dossier = "img/";
+        $dossier = "/public/img/";
         $nomFichier = $figurine_id . ".webp";
 
 
@@ -87,7 +87,7 @@ if (isset($_FILES['image']) && $_FILES['image']['error'] == 0) {
 <html lang="en">
 
 <head>
-    <?php require_once(__DIR__ . '/head.php'); ?>
+    <?php require_once(__DIR__ . '/common/head.php'); ?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Création d'article</title>
@@ -110,7 +110,7 @@ if (isset($_FILES['image']) && $_FILES['image']['error'] == 0) {
             </div>
         </div>
 
-        <a class="btn btn-primary" role="button" href="Read.php">RETOUR</a>
+        <a class="btn btn-primary" role="button" href="pages/Read.php">RETOUR</a>
     </div>
 
 </body>

@@ -1,7 +1,7 @@
 <?php
 
-include(__DIR__ . '/connect.php');
-include(__DIR__ . '/functions.php');
+include(__DIR__ . '/common/connect.php');
+include(__DIR__ . '/common/functions.php');
 
 
 if (isset($_GET['id']) && is_numeric($_GET['id'])) {
@@ -26,7 +26,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
     <html lang="fr">
 
     <head>
-        <?php require_once(__DIR__ . '/head.php'); ?>
+        <?php require_once(__DIR__ . '/common/head.php'); ?>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Figurines | <?= $figurine ? htmlspecialchars($figurine['nom']) : 'Article introuvable'; ?></title>
@@ -34,7 +34,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
     </head>
 
     <body class="bg-dark">
-        <?php require_once(__DIR__ . '/header.php'); ?>
+        <?php require_once(__DIR__ . '/common/header.php'); ?>
 
         <div class="container text-center d-flex flex-wrap justify-content-center">
 
@@ -52,7 +52,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
                 // ============================================================
 
 
-                $imagePath = "img/" . $figurine['id'] . ".webp";
+                $imagePath = "/public/img/" . $figurine['id'] . ".webp";
                 if (file_exists($imagePath)) {
                     $image = "/$imagePath";
                 } else {
@@ -83,7 +83,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
             <div class="col-12">
 
 
-                <a class="btn btn-primary" role="button" href="/Read.php">RETOUR</a>
+                <a class="btn btn-primary" role="button" href="/pages/Read.php">RETOUR</a>
 
                 <div id="shareAlert" class="alert"></div>
             </div>
