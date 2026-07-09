@@ -45,7 +45,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
 
             if ($figurine) {
 
-                echo "<div class='card col-9 m-5 p-3'>";
+                echo "<div class='card col-9 m-2 p-3'>";
 
                 // ============================================================
                 // GESTION DE L'IMAGE
@@ -54,12 +54,12 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
 
                 $imagePath = "img/" . $figurine['id'] . ".webp";
                 if (file_exists($imagePath)) {
-                    $image = BASE_URL . "/$imagePath";
+                    $image = "/$imagePath";
                 } else {
                     $image = "https://picsum.photos/100/200";
                 }
 
-                echo "<img src=\"$image\" class=\"card-img-top object-fit-cover\" style=\"height: 500px;\" alt=\"" . htmlspecialchars($figurine['nom']) . "\">";
+                echo "<img src=\"$image\" class=\"card-img-top object-fit-cover\" style=\"height: 400px;\" alt=\"" . htmlspecialchars($figurine['nom']) . "\">";
 
                 echo "<h1>" . htmlspecialchars($figurine['nom']) . "</h1>";
 
@@ -83,14 +83,14 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
             <div class="col-12">
 
 
-                <a class="btn btn-primary" role="button" href="<?= BASE_URL ?>/Read.php">RETOUR</a>
+                <a class="btn btn-primary" role="button" href="/Read.php">RETOUR</a>
 
                 <div id="shareAlert" class="alert"></div>
             </div>
 
         </div>
 
-        <script src="<?= BASE_URL ?>/js/share.js"></script>
+        <script src="/js/share.js"></script>
     </body>
 
     </html>
