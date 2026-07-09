@@ -1,13 +1,13 @@
 <?php
 
-include(__DIR__ . '/common/connect.php');
+include(__DIR__ . '/../common/connect.php');
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <?php require_once(__DIR__ . '/common/head.php'); ?>
+    <?php require_once(__DIR__ . '/../common/head.php'); ?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ajouter un article</title>
@@ -21,7 +21,7 @@ include(__DIR__ . '/common/connect.php');
 
 
             <h1>Ajouter un produit au catalogue</h1>
-            <form action="Create_post.php" method="POST" enctype="multipart/form-data">
+            <form action="ajouter" method="POST" enctype="multipart/form-data">
 
 
                 <div class="mb-3">
@@ -54,7 +54,7 @@ include(__DIR__ . '/common/connect.php');
                 <button type="submit" class="btn btn-primary">ENVOYER</button>
 
             </form>
-            <a class="btn btn-primary" role="button" href="pages/Read.php">RETOUR</a>
+            <a class="btn btn-primary" role="button" href="lire">RETOUR</a>
         </div>
     </div>
 </body>

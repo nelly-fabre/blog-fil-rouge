@@ -1,6 +1,6 @@
 <?php
 
-include(__DIR__ . '/connect.php');
+include(__DIR__ . '/../common/connect.php');
 
 
 $getData = $_GET;
@@ -37,7 +37,7 @@ if (!$figurine) {
 <html>
 
 <head>
-    <?php require_once(__DIR__ . '/head.php'); ?>
+    <?php require_once(__DIR__ . '/../common/head.php'); ?>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -50,7 +50,7 @@ if (!$figurine) {
 
         <h1>Mettre à jour <?php echo ($figurine['nom']); ?></h1>
 
-        <form action="Update_post.php" method="POST">
+        <form action="modifier-post" method="POST">
 
 
             <div class="mb-3 visually-hidden">
@@ -90,7 +90,7 @@ if (!$figurine) {
 
             <!-- BOUTONS D'ACTION -->
             <button type="submit" class="btn btn-primary">Envoyer</button>
-            <a class="btn btn-primary" role="button" href="Read.php">RETOUR</a>
+            <a class="btn btn-primary" role="button" href="lire">RETOUR</a>
         </form>
         <br />
     </div>

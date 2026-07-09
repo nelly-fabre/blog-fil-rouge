@@ -1,7 +1,7 @@
 <?php
 
-include(__DIR__ . '/connect.php');
-include(__DIR__ . '/functions.php');
+include(__DIR__ . '/../connect.php');
+include(__DIR__ . '/../functions.php');
 ?>
 
 
@@ -11,7 +11,7 @@ include(__DIR__ . '/functions.php');
 <html lang="en">
 
 <head>
-    <?php require_once(__DIR__ . '/head.php'); ?>
+    <?php require_once(__DIR__ . '/../head.php'); ?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -29,7 +29,7 @@ include(__DIR__ . '/functions.php');
 
                         <h1 class="card-title text-center mb-4 h3">Connexion</h1>
 
-                        <form action="submit-login.php" method="POST">
+                        <form action="connexion-post" method="POST">
 
                             <?php if (!empty($_SESSION['LOGIN_ERROR_MESSAGE'])) : ?>
                                 <div class="alert alert-danger" role="alert">

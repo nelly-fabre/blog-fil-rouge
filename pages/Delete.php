@@ -1,6 +1,6 @@
 <?php
 
-include(__DIR__ . '/common/connect.php');
+include(__DIR__ . '/../common/connect.php');
 
 
 $getData = $_GET;
@@ -19,7 +19,7 @@ if (!isset($getData['id']) || !is_numeric($getData['id'])) {
 <html>
 
 <head>
-    <?php require_once(__DIR__ . '/common/head.php'); ?>
+    <?php require_once(__DIR__ . '/../common/head.php'); ?>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,7 +34,7 @@ if (!isset($getData['id']) || !is_numeric($getData['id'])) {
         <h1>Supprimer l'article</h1>
 
 
-        <form action="Delete_post.php" method="POST">
+        <form action="supprimer" method="POST">
 
 
             <div class="mb-3 visually-hidden">
@@ -48,7 +48,7 @@ if (!isset($getData['id']) || !is_numeric($getData['id'])) {
             <button type="submit" class="btn btn-danger">Oui !</button>
 
 
-            <a class="btn btn-primary" role="button" href="Read.php">Annuler</a>
+            <a class="btn btn-primary" role="button" href="lire">Annuler</a>
         </form>
         <br />
     </div>

@@ -1,6 +1,6 @@
 <?php
 
-include(__DIR__ . '/common/connect.php');
+include(__DIR__ . '/../common/connect.php');
 
 $postData = $_POST;
 
@@ -87,7 +87,7 @@ if (isset($_FILES['image']) && $_FILES['image']['error'] == 0) {
 <html lang="en">
 
 <head>
-    <?php require_once(__DIR__ . '/common/head.php'); ?>
+    <?php require_once(__DIR__ . '/../common/head.php'); ?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Création d'article</title>
@@ -110,7 +110,7 @@ if (isset($_FILES['image']) && $_FILES['image']['error'] == 0) {
             </div>
         </div>
 
-        <a class="btn btn-primary" role="button" href="pages/Read.php">RETOUR</a>
+        <a class="btn btn-primary" role="button" href="lire">RETOUR</a>
     </div>
 
 </body>

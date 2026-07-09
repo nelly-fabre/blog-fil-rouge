@@ -1,9 +1,9 @@
 <?php
-require(__DIR__ . '/connect.php');
-include(__DIR__ . '/functions.php');
+require(__DIR__ . '/../common/connect.php');
+include(__DIR__ . '/../common/functions.php');
 
 if (!isset($_SESSION['LOGGED_USER'])) {
-    header('Location: login.php');
+    redirectToUrl('connexion'); // au lieu de redirectToUrl('Read.php')
     exit;
 }
 ?>
@@ -13,7 +13,7 @@ if (!isset($_SESSION['LOGGED_USER'])) {
 <html lang="en">
 
 <head>
-    <?php require_once(__DIR__ . '/head.php'); ?>
+    <?php require_once(__DIR__ . '/../common/head.php'); ?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figurines</title>
@@ -21,7 +21,7 @@ if (!isset($_SESSION['LOGGED_USER'])) {
 </head>
 
 <body class="bg-dark">
-    <?php require_once(__DIR__ . '/header.php'); ?>
+    <?php require_once(__DIR__ . '/../common/header.php'); ?>
     <div class="col-4 text-light mx-md-5">
         <?php if (isset($_SESSION['LOGGED_USER'])) : ?>
             <strong>Bonjour <?= htmlspecialchars($_SESSION['LOGGED_USER']['login']) ?></strong>
@@ -33,7 +33,7 @@ if (!isset($_SESSION['LOGGED_USER'])) {
 
 
     <div class="d-flex ms-5">
-        <a class="btn btn-outline-success" href="Create.php">Ajouter une figurine</a>
+        <a class="btn btn-outline-success" href="ajouter">Ajouter une figurine</a>
     </div>
     <div class="container">
         <div class="row">
@@ -75,8 +75,8 @@ if (!isset($_SESSION['LOGGED_USER'])) {
                             </p><br><br><br><br>
 
 
-                            <a class="btn btn-outline-danger" href="Delete.php?id=<?= htmlspecialchars($figurine['id']) ?>">Supprimer</a>
-                            <a class="btn btn-outline-warning" href="Update.php?id=<?= htmlspecialchars($figurine['id']) ?>">Modifier</a>
+                            <a class="btn btn-outline-danger" href="supprimer?id=<?= htmlspecialchars($figurine['id']) ?>">Supprimer</a>
+                            <a class="btn btn-outline-warning" href="modifier?id=<?= htmlspecialchars($figurine['id']) ?>">Modifier</a>
                             <a class="btn btn-outline-primary" href="figurine/<?= $figurine['id'] ?>-<?= slugify($figurine['nom']) ?>.html">En savoir +</a>
                         </div>
                     </div>

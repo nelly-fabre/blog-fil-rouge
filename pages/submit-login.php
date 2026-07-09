@@ -1,7 +1,7 @@
 <?php
 
-require(__DIR__ . '/common/connect.php');
-include(__DIR__ . '/common/functions.php');
+require(__DIR__ . '/../common/connect.php');
+include(__DIR__ . '/../common/functions.php');
 
 $postData = $_POST;
 
@@ -26,9 +26,9 @@ if (isset($postData['login']) && isset($postData['mdp'])) {
             $postData['login'],
             strip_tags($postData['mdp'])
         );
-        redirectToUrl('login.php');
+        redirectToUrl('connexion');
     }
 
     // ✅ Authentification réussie : on redirige vers la page principale
-    redirectToUrl('Read.php');
+    redirectToUrl('lire');
 }
