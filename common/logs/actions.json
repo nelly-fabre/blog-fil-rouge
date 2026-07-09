@@ -12,5 +12,61 @@
         "action": "connexion_reussie",
         "details": [],
         "ip": "::1"
+    },
+    {
+        "date": "2026-07-09 11:35:43",
+        "utilisateur": "admin1",
+        "action": "deconnexion",
+        "details": [],
+        "ip": "::1"
+    },
+    {
+        "date": "2026-07-09 11:39:53",
+        "utilisateur": "admin1",
+        "action": "connexion_reussie",
+        "details": [],
+        "ip": "::1"
+    },
+    {
+        "date": "2026-07-09 11:44:40",
+        "utilisateur": "admin1",
+        "action": "deconnexion",
+        "details": [],
+        "ip": "::1"
+    },
+    {
+        "date": "2026-07-09 11:45:42",
+        "utilisateur": "admin1",
+        "action": "connexion_reussie",
+        "details": [],
+        "ip": "::1"
+    },
+    {
+        "date": "2026-07-09 11:46:20",
+        "utilisateur": "admin1",
+        "action": "creation_figurine",
+        "details": {
+            "figurine_id": "31",
+            "nom": "gfshxfgh"
+        },
+        "ip": "::1"
+    },
+    {
+        "date": "2026-07-09 11:46:37",
+        "utilisateur": "admin1",
+        "action": "suppression_figurine",
+        "details": {
+            "figurine_id": 31
+        },
+        "ip": "::1"
+    },
+    {
+        "date": "2026-07-09 11:47:04",
+        "utilisateur": "admin1",
+        "action": "modification_figurine",
+        "details": {
+            "figurine_id": 29
+        },
+        "ip": "::1"
     }
 ]

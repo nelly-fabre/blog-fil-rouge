@@ -10,7 +10,8 @@ SELECT f.id, f.nom, f.licence,f.description, f.date_ajout, v.prix_estime, v.etat
 FROM figurines f
 LEFT JOIN valeur v ON f.id = v.figurine_id
 ORDER BY `f`.`date_ajout`
-DESC;';
+DESC
+LIMIT 3';
 
 $lastFigurines = $mysqlClient->prepare($sqlQuery);
 $lastFigurines->execute();

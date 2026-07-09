@@ -22,6 +22,7 @@ $routes = [
     'modifier-post' => __DIR__ . '/../pages/Update_post.php',
     'supprimer' => __DIR__ . '/../pages/Delete.php',
     'supprimer-post' => __DIR__ . '/../pages/Delete_post.php',
+    'logs' => __DIR__ . '/../pages/logs.php',
 ];
 
 // Cas particulier : les fiches figurines (figurine/23-nom-du-slug)
