@@ -110,5 +110,19 @@
         "action": "connexion_reussie",
         "details": [],
         "ip": "::1"
+    },
+    {
+        "date": "2026-07-09 12:26:19",
+        "utilisateur": "admin1",
+        "action": "deconnexion",
+        "details": [],
+        "ip": "::1"
+    },
+    {
+        "date": "2026-07-09 12:26:23",
+        "utilisateur": "admin1",
+        "action": "connexion_reussie",
+        "details": [],
+        "ip": "::1"
     }
 ]
