@@ -56,7 +56,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
 
                 $imagePath = __DIR__ . '/../public/assets/img/' . $figurine['id'] . '.webp';
                 if (file_exists($imagePath)) {
-                    $image = '/img/' . $figurine['id'] . '.webp';
+                    $image = '/assets/img/' . $figurine['id'] . '.webp';
                 } else {
                     $image = "https://picsum.photos/100/200";
                 }
@@ -96,7 +96,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
             </div>
 
         </div>
-
+        <?php require_once(__DIR__ . '/../common/footer.php'); ?>
         <script src="/assets/js/share.js"></script>
     </body>
 

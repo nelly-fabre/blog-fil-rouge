@@ -99,7 +99,7 @@ DESC';
     </div>
 
 
-
+    <?php require_once(__DIR__ . '/../common/footer.php'); ?>
 </body>
 
 </html>

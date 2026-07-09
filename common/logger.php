@@ -2,10 +2,8 @@
 
 /**
  * Enregistre une action dans le fichier de logs JSON
- *
- * @param string $action    Le type d'action (ex: 'connexion', 'creation_figurine', 'suppression_figurine')
- * @param array  $details   Informations complémentaires (ex: ['figurine_id' => 12])
  */
+
 function logAction(string $action, array $details = []): void
 {
     $logFile = __DIR__ . '/logs/actions.json';
