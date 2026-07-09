@@ -1,6 +1,6 @@
 <?php
 
-include(__DIR__ . '/../common/connect.php');
+require_once(__DIR__ . '/../common/connect.php');
 ?>
 
 <!DOCTYPE html>
@@ -21,7 +21,7 @@ include(__DIR__ . '/../common/connect.php');
 
 
             <h1>Ajouter un produit au catalogue</h1>
-            <form action="ajouter" method="POST" enctype="multipart/form-data">
+            <form action="ajouter-post" method="POST" enctype="multipart/form-data">
 
 
                 <div class="mb-3">

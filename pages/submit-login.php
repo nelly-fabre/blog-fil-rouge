@@ -1,7 +1,7 @@
 <?php
 
-require(__DIR__ . '/../common/connect.php');
-include(__DIR__ . '/../common/functions.php');
+require_once(__DIR__ . '/../common/connect.php');
+require_once(__DIR__ . '/../common/functions.php');
 
 $postData = $_POST;
 

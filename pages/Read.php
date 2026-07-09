@@ -1,6 +1,6 @@
 <?php
-require(__DIR__ . '/../common/connect.php');
-include(__DIR__ . '/../common/functions.php');
+require_once(__DIR__ . '/../common/connect.php');
+require_once(__DIR__ . '/../common/functions.php');
 
 if (!isset($_SESSION['LOGGED_USER'])) {
     redirectToUrl('connexion'); // au lieu de redirectToUrl('Read.php')
@@ -51,7 +51,7 @@ if (!isset($_SESSION['LOGGED_USER'])) {
                             <h2 class='card-title' style="color: #ff5e00"><?= htmlspecialchars(($figurine['nom'])) ?></h2>
 
                             <?php
-                            $imagePath = "img/" . $figurine['id'] . ".webp";
+                            $imagePath = __DIR__ . '/../public/img/' . $figurine['id'] . ".webp";
                             if (file_exists($imagePath)) {
                                 $image = "$imagePath";
                             } else {

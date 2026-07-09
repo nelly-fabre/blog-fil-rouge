@@ -1,7 +1,4 @@
 RewriteEngine On
-RewriteRule ^figurine/([0-9]+)-([a-zA-Z0-9-]+)\.html$ pages/article.php?id=$1 [L,QSA]
-
-
 
 # Si la ressource demandée est un vrai fichier ou dossier existant, on la sert normalement
 RewriteCond %{REQUEST_FILENAME} !-f

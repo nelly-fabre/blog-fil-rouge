@@ -1,6 +1,6 @@
 <?php
 
-include(__DIR__ . '/../common/connect.php');
+require_once(__DIR__ . '/../common/connect.php');
 
 $postData = $_POST;
 

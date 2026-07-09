@@ -4,16 +4,16 @@
 
     <ul class="list-inline d-flex justify-content-center align-items-center mb-0">
         <li class="list-inline-item">
-            <a href="/pages/Read.php">Accueil</a>
+            <a href="/lire">Accueil</a>
         </li>
         <li class="list-inline-item">
             <a href="#">Contact</a>
         </li>
         <li class="list-inline-item">
             <?php if (isset($_SESSION['LOGGED_USER'])) : ?>
-                <a href="/pages/logout.php" class="btn btn-outline-primary">Se déconnecter</a>
+                <a href="deconnexion" class="btn btn-outline-primary">Se déconnecter</a>
             <?php else : ?>
-                <a href="/pages/login.php" class="btn btn-outline-primary">Se connecter</a>
+                <a href="connexion" class="btn btn-outline-primary">Se connecter</a>
             <?php endif; ?>
         </li>
     </ul>

@@ -1,7 +1,7 @@
 <?php
 
-include(__DIR__ . '/../common/connect.php');
-include(__DIR__ . '/../common/functions.php');
+require_once(__DIR__ . '/../common/connect.php');
+require_once(__DIR__ . '/../common/functions.php');
 
 
 
@@ -54,14 +54,14 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
                 // ============================================================
 
 
-                $imagePath = "/public/img/" . $figurine['id'] . ".webp";
+                $imagePath = __DIR__ . '/../public/img/' . $figurine['id'] . '.webp';
                 if (file_exists($imagePath)) {
-                    $image = "/$imagePath";
+                    $image = '/img/' . $figurine['id'] . '.webp';
                 } else {
                     $image = "https://picsum.photos/100/200";
                 }
 
-                echo "<img src=\"$image\" class=\"card-img-top object-fit-cover\" style=\"height: 400px;\" alt=\"" . htmlspecialchars($figurine['nom']) . "\">";
+                echo "<img src=\"$image\" class=\"card-img-top object-fit-contain\" style=\"height: 400px;\" alt=\"" . htmlspecialchars($figurine['nom']) . "\">";
 
                 echo "<h1>" . htmlspecialchars($figurine['nom']) . "</h1>";
 
@@ -85,7 +85,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
             <div class="col-12">
 
 
-                <a class="btn btn-primary" role="button" href="lire">RETOUR</a>
+                <a class="btn btn-primary" role="button" href="/lire">RETOUR</a>
 
                 <div id="shareAlert" class="alert"></div>
             </div>
