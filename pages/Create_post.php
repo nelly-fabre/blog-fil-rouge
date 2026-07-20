@@ -1,6 +1,9 @@
 <?php
 
 require_once(__DIR__ . '/../common/connect.php');
+require_once(__DIR__ . '/../common/functions.php');
+
+requireRole(['editeur', 'admin']);
 
 $postData = $_POST;
 
@@ -70,7 +73,7 @@ if (isset($_FILES['image']) && $_FILES['image']['error'] == 0) {
     if ($typeMime === "image/webp") {
 
 
-        $dossier = "/public/img/";
+        $dossier = __DIR__ . "/../public/assets/img/";
         $nomFichier = $figurine_id . ".webp";
 
 

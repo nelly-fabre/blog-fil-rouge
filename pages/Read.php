@@ -33,7 +33,11 @@ if (!isset($_SESSION['LOGGED_USER'])) {
 
 
     <div class="d-flex ms-5">
-        <a class="btn btn-outline-success" href="ajouter">Ajouter une figurine</a>
+        <?php $droits = $_SESSION['LOGGED_USER']['droits'] ?? null; ?>
+
+        <?php if (in_array($droits, ['editeur', 'admin'])) : ?>
+            <a class="btn btn-outline-success" href="/ajouter">Ajouter une figurine</a>
+        <?php endif; ?>
     </div>
     <div class="container">
         <div class="row">
@@ -86,8 +90,11 @@ DESC';
                             </p><br><br><br><br>
 
 
-                            <a class="btn btn-outline-danger" href="supprimer?id=<?= htmlspecialchars($figurine['id']) ?>">Supprimer</a>
-                            <a class="btn btn-outline-warning" href="modifier?id=<?= htmlspecialchars($figurine['id']) ?>">Modifier</a>
+                            <?php if ($droits === 'admin') : ?>
+                                <a class="btn btn-outline-danger" href="/supprimer?id=<?= htmlspecialchars($figurine['id']) ?>">Supprimer</a>
+                                <a class="btn btn-outline-warning" href="/modifier?id=<?= htmlspecialchars($figurine['id']) ?>">Modifier</a>
+                            <?php endif; ?>
+                            
                             <a class="btn btn-outline-primary" href="figurine/<?= $figurine['id'] ?>-<?= slugify($figurine['nom']) ?>.html">En savoir +</a>
                         </div>
                     </div>

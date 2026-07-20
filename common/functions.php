@@ -86,3 +86,29 @@ function slugify($text)
     // Si après tout ça le texte est vide, on retourne 'n-a' (non applicable)
     return empty($text) ? 'n-a' : $text;
 }
+
+
+
+//********************************* */
+// Rôles
+//********************************* */
+/**
+ * Vérifie que l'utilisateur connecté a l'un des rôles autorisés.
+ * Redirige ou bloque l'accès si ce n'est pas le cas.
+ *
+ * @param array $rolesAutorises Liste des rôles ayant le droit d'accéder (ex: ['admin'])
+ */
+function requireRole(array $rolesAutorises): void
+{
+    if (!isset($_SESSION['LOGGED_USER'])) {
+        redirectToUrl('connexion');
+    }
+
+    $roleActuel = $_SESSION['LOGGED_USER']['droits'] ?? null;
+
+    if (!in_array($roleActuel, $rolesAutorises, true)) {
+        http_response_code(403);
+        echo "<div class='container my-5'><h1>Accès refusé</h1><p>Vous n'avez pas les droits nécessaires pour accéder à cette page.</p><a href='/lire' class='btn btn-primary'>Retour</a></div>";
+        exit;
+    }
+}

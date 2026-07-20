@@ -3,6 +3,8 @@
 require_once(__DIR__ . '/../common/connect.php');
 require_once(__DIR__ . '/../common/functions.php');
 
+requireRole(['admin']);
+
 
 $postData = $_POST;
 

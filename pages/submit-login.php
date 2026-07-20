@@ -17,6 +17,7 @@ if (isset($postData['login']) && isset($postData['mdp'])) {
                 'login' => $user['login'],
                 'nom' => $user['nom'],
                 'prenom' => $user['prenom'],
+                'droits' => $user['droits'],
             ];
             // 🔒 Régénère l'id de session pour éviter la session fixation
             session_regenerate_id(true);

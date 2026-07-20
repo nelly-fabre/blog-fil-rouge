@@ -2,6 +2,8 @@
 require_once(__DIR__ . '/../common/connect.php');
 require_once(__DIR__ . '/../common/functions.php');
 
+requireRole(['admin']);
+
 // Seuls les utilisateurs connectés peuvent consulter les logs
 if (!isset($_SESSION['LOGGED_USER'])) {
     redirectToUrl('connexion');
@@ -34,7 +36,7 @@ $logs = array_reverse($logs);
 
     <div class="container my-5">
         <div class="d-flex justify-content-end">
-            <a href="/lire" class="btn btn-primary ">RETOUR</a>
+            <a href="lire" class="btn btn-primary ">RETOUR</a>
         </div>
         <h1 class="mb-4">Journal des actions</h1>
 

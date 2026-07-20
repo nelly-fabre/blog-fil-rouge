@@ -124,5 +124,188 @@
         "action": "connexion_reussie",
         "details": [],
         "ip": "::1"
+    },
+    {
+        "date": "2026-07-20 06:53:41",
+        "utilisateur": "admin1",
+        "action": "connexion_reussie",
+        "details": [],
+        "ip": "::1"
+    },
+    {
+        "date": "2026-07-20 06:57:50",
+        "utilisateur": "admin1",
+        "action": "creation_figurine",
+        "details": {
+            "figurine_id": "5",
+            "nom": "Ezio Auditore"
+        },
+        "ip": "::1"
+    },
+    {
+        "date": "2026-07-20 07:14:01",
+        "utilisateur": "admin1",
+        "action": "suppression_figurine",
+        "details": {
+            "figurine_id": 5
+        },
+        "ip": "::1"
+    },
+    {
+        "date": "2026-07-20 07:14:34",
+        "utilisateur": "admin1",
+        "action": "creation_figurine",
+        "details": {
+            "figurine_id": "6",
+            "nom": "Ezio Auditore"
+        },
+        "ip": "::1"
+    },
+    {
+        "date": "2026-07-20 07:16:52",
+        "utilisateur": "admin1",
+        "action": "suppression_figurine",
+        "details": {
+            "figurine_id": 6
+        },
+        "ip": "::1"
+    },
+    {
+        "date": "2026-07-20 07:17:18",
+        "utilisateur": "admin1",
+        "action": "creation_figurine",
+        "details": {
+            "figurine_id": "7",
+            "nom": "Ezio Auditore"
+        },
+        "ip": "::1"
+    },
+    {
+        "date": "2026-07-20 07:20:13",
+        "utilisateur": "admin1",
+        "action": "modification_figurine",
+        "details": {
+            "figurine_id": 7
+        },
+        "ip": "::1"
+    },
+    {
+        "date": "2026-07-20 07:20:23",
+        "utilisateur": "admin1",
+        "action": "deconnexion",
+        "details": [],
+        "ip": "::1"
+    },
+    {
+        "date": "2026-07-20 07:20:30",
+        "utilisateur": "admin1",
+        "action": "connexion_reussie",
+        "details": [],
+        "ip": "::1"
+    },
+    {
+        "date": "2026-07-20 07:55:32",
+        "utilisateur": "admin1",
+        "action": "connexion_reussie",
+        "details": [],
+        "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-20 08:50:18",
+        "utilisateur": "admin1",
+        "action": "deconnexion",
+        "details": [],
+        "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-20 08:50:27",
+        "utilisateur": "lecteur1",
+        "action": "connexion_reussie",
+        "details": [],
+        "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-20 08:50:42",
+        "utilisateur": "lecteur1",
+        "action": "deconnexion",
+        "details": [],
+        "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-20 08:51:00",
+        "utilisateur": "editeur1",
+        "action": "connexion_reussie",
+        "details": [],
+        "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-20 08:52:00",
+        "utilisateur": "editeur1",
+        "action": "deconnexion",
+        "details": [],
+        "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-20 08:52:05",
+        "utilisateur": "admin1",
+        "action": "connexion_reussie",
+        "details": [],
+        "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-20 08:53:46",
+        "utilisateur": "admin1",
+        "action": "deconnexion",
+        "details": [],
+        "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-20 08:53:51",
+        "utilisateur": "admin1",
+        "action": "connexion_reussie",
+        "details": [],
+        "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-20 08:54:04",
+        "utilisateur": "admin1",
+        "action": "deconnexion",
+        "details": [],
+        "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-20 08:54:08",
+        "utilisateur": "editeur1",
+        "action": "connexion_reussie",
+        "details": [],
+        "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-20 08:54:15",
+        "utilisateur": "editeur1",
+        "action": "deconnexion",
+        "details": [],
+        "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-20 08:54:20",
+        "utilisateur": "lecteur1",
+        "action": "connexion_reussie",
+        "details": [],
+        "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-20 09:00:45",
+        "utilisateur": "lecteur1",
+        "action": "deconnexion",
+        "details": [],
+        "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-20 09:01:02",
+        "utilisateur": "admin1",
+        "action": "connexion_reussie",
+        "details": [],
+        "ip": "127.0.0.1"
     }
 ]
