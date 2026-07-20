@@ -31,31 +31,48 @@ if (!isset($getData['id']) || !is_numeric($getData['id'])) {
 </head>
 
 <body class="d-flex flex-column min-vh-100">
-    <div class="container">
+    <div class="modal fade" id="successModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        Voulez-vous vraiment supprimer cet article ?
+                    </h5>
+                </div>
+
+                <form action="supprimer-post" method="POST">
 
 
-        <h1>Supprimer l'article</h1>
+                    <div class="mb-3 visually-hidden">
+
+                        <label for="id" class="form-label">Voulez-vous supprimer cet article <?php echo $getData['id']; ?> ?</label>
+
+                        <input type="hidden" class="form-control" id="id" name="id" value="<?php echo $getData['id']; ?>">
+                    </div>
+
+                    <div class="d-flex justify-content-center my-3">
+
+                        <button type="submit" class="btn btn-danger">Oui !</button>
 
 
-        <form action="supprimer-post" method="POST">
+                        <a class="btn btn-primary" role="button" href="lire">Annuler</a>
 
+                    </div>
+                </form>
 
-            <div class="mb-3 visually-hidden">
-
-                <label for="id" class="form-label">Voulez-vous supprimer cet article <?php echo $getData['id']; ?> ?</label>
-
-                <input type="hidden" class="form-control" id="id" name="id" value="<?php echo $getData['id']; ?>">
             </div>
-
-
-            <button type="submit" class="btn btn-danger">Oui !</button>
-
-
-            <a class="btn btn-primary" role="button" href="lire">Annuler</a>
-        </form>
-        <br />
+        </div>
     </div>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const modal = new bootstrap.Modal(
+                document.getElementById("successModal")
+            );
+
+            modal.show();
+        });
+    </script>
 </body>
 
 </html>

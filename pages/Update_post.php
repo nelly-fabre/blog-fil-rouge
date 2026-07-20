@@ -83,26 +83,54 @@ logAction('modification_figurine', ['figurine_id' => $id]);
 </head>
 
 <body class="d-flex flex-column min-vh-100">
-    <div class="container">
+    <div class="modal fade" id="successModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
 
-        <h1>Article modifié avec succès !</h1>
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        Article modifié avec succès !
+                    </h5>
+                </div>
 
+                <div class="modal-body">
 
-        <div class="card">
-            <div class="card-body">
-                <p class="mb-3 visually-hidden"><?php echo ($id); ?></p>en
-                <h5 class="card-title"><?php echo $nom; ?></h5>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5><?= $nom ?></h5>
 
-                <p class="card-text"><?php echo $licence; ?></p>
-                <p class="card-text"><?php echo $description; ?></p>
-                <p class="card-text"><?php echo $prix_estime; ?></p>
-                <p class="card-text"><?php echo $etat; ?></p>
+                            <p><?= $licence ?></p>
+
+                            <p><?= $description ?></p>
+
+                            <p><?= $prix_estime ?> €</p>
+
+                            <p><?= $etat ?></p>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="modal-footer">
+                    <a href="lire" class="btn btn-primary">
+                        Retour
+                    </a>
+                </div>
+
             </div>
         </div>
     </div>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const modal = new bootstrap.Modal(
+                document.getElementById("successModal")
+            );
 
-    <a class="btn btn-primary" role="button" href="lire">RETOUR</a>
+            modal.show();
+        });
+    </script>
 </body>
 
 </html>

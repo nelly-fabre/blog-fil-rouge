@@ -45,10 +45,36 @@ logAction('suppression_figurine', ['figurine_id' => (int) $postData['id']]);
 
 <body>
 
-    <p>Article supprimé avec succés</p> <br>
+   <div class="modal fade" id="successModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
 
+            <div class="modal-header">
+                <h5 class="modal-title">
+                    Article supprimé avec succès !
+                </h5>
+            </div>
 
-    <a class="btn btn-primary" role="button" href="lire">RETOUR</a>
+            
+            <div class="modal-footer">
+                <a href="lire" class="btn btn-primary">
+                    Retour
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const modal = new bootstrap.Modal(
+        document.getElementById("successModal")
+    );
+
+    modal.show();
+});
+</script>
 </body>
 
 </html>

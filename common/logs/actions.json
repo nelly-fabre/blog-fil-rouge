@@ -307,5 +307,207 @@
         "action": "connexion_reussie",
         "details": [],
         "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-20 11:22:05",
+        "utilisateur": "admin1",
+        "action": "connexion_reussie",
+        "details": [],
+        "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-20 11:26:42",
+        "utilisateur": "admin1",
+        "action": "deconnexion",
+        "details": [],
+        "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-20 11:26:46",
+        "utilisateur": "lecteur1",
+        "action": "connexion_reussie",
+        "details": [],
+        "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-20 11:31:13",
+        "utilisateur": "lecteur1",
+        "action": "deconnexion",
+        "details": [],
+        "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-20 11:31:19",
+        "utilisateur": "admin1",
+        "action": "connexion_reussie",
+        "details": [],
+        "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-20 12:21:54",
+        "utilisateur": "admin1",
+        "action": "deconnexion",
+        "details": [],
+        "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-20 12:21:58",
+        "utilisateur": "admin1",
+        "action": "connexion_reussie",
+        "details": [],
+        "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-20 12:22:55",
+        "utilisateur": "admin1",
+        "action": "creation_figurine",
+        "details": {
+            "figurine_id": "8",
+            "nom": "Bonnet pour chien"
+        },
+        "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-20 12:23:55",
+        "utilisateur": "admin1",
+        "action": "creation_figurine",
+        "details": {
+            "figurine_id": "9",
+            "nom": "Bonnet pour chien"
+        },
+        "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-20 12:27:36",
+        "utilisateur": "admin1",
+        "action": "creation_figurine",
+        "details": {
+            "figurine_id": "10",
+            "nom": "Bonnet pour chien"
+        },
+        "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-20 12:27:44",
+        "utilisateur": "admin1",
+        "action": "suppression_figurine",
+        "details": {
+            "figurine_id": 9
+        },
+        "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-20 12:27:50",
+        "utilisateur": "admin1",
+        "action": "suppression_figurine",
+        "details": {
+            "figurine_id": 10
+        },
+        "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-20 12:29:29",
+        "utilisateur": "admin1",
+        "action": "creation_figurine",
+        "details": {
+            "figurine_id": "11",
+            "nom": "Axolotl en chausettes"
+        },
+        "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-20 12:32:33",
+        "utilisateur": "admin1",
+        "action": "suppression_figurine",
+        "details": {
+            "figurine_id": 8
+        },
+        "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-20 12:37:56",
+        "utilisateur": "admin1",
+        "action": "creation_figurine",
+        "details": {
+            "figurine_id": "12",
+            "nom": "Bonnet pour chien"
+        },
+        "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-20 12:38:18",
+        "utilisateur": "admin1",
+        "action": "suppression_figurine",
+        "details": {
+            "figurine_id": 12
+        },
+        "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-20 12:39:39",
+        "utilisateur": "admin1",
+        "action": "creation_figurine",
+        "details": {
+            "figurine_id": "13",
+            "nom": "Bonnet pour chien"
+        },
+        "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-20 12:39:57",
+        "utilisateur": "admin1",
+        "action": "suppression_figurine",
+        "details": {
+            "figurine_id": 7
+        },
+        "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-20 12:41:23",
+        "utilisateur": "admin1",
+        "action": "creation_figurine",
+        "details": {
+            "figurine_id": "14",
+            "nom": "Ezio Auditore"
+        },
+        "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-20 12:41:36",
+        "utilisateur": "admin1",
+        "action": "suppression_figurine",
+        "details": {
+            "figurine_id": 14
+        },
+        "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-20 12:50:30",
+        "utilisateur": "admin1",
+        "action": "creation_figurine",
+        "details": {
+            "figurine_id": "15",
+            "nom": "Ezio Auditore"
+        },
+        "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-20 12:53:42",
+        "utilisateur": "admin1",
+        "action": "creation_figurine",
+        "details": {
+            "figurine_id": "16",
+            "nom": "Capybara avec casquette"
+        },
+        "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-20 12:57:41",
+        "utilisateur": "admin1",
+        "action": "modification_figurine",
+        "details": {
+            "figurine_id": 16
+        },
+        "ip": "127.0.0.1"
     }
 ]

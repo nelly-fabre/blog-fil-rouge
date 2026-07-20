@@ -95,28 +95,59 @@ if (isset($_FILES['image']) && $_FILES['image']['error'] == 0) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Création d'article</title>
+    
 </head>
 
 <body>
 
-    <div class="container">
+    <div class="modal fade" id="successModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
 
-        <h1>Article ajouté avec succès ! </h1>
-
-
-        <div class="card">
-            <div class="card-body">
-                <h5 class="card-title"><?= $nom; ?></h5>
-                <p class="card-text"><?php echo $licence; ?></p>
-                <p class="card-text"> <?php echo $description; ?></p>
-                <p class="card-text"> <?php echo $prix_estime; ?></p>
-                <p class="card-text"> <?php echo $etat; ?></p>
+            <div class="modal-header">
+                <h5 class="modal-title">
+                    Article ajouté avec succès !
+                </h5>
             </div>
+
+            <div class="modal-body">
+
+                <div class="card">
+                    <div class="card-body">
+                        <h5><?= $nom ?></h5>
+
+                        <p><?= $licence ?></p>
+
+                        <p><?= $description ?></p>
+
+                        <p><?= $prix_estime ?> €</p>
+
+                        <p><?= $etat ?></p>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="modal-footer">
+                <a href="lire" class="btn btn-primary">
+                    Retour
+                </a>
+            </div>
+
         </div>
-
-        <a class="btn btn-primary" role="button" href="lire">RETOUR</a>
     </div>
+</div>
 
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const modal = new bootstrap.Modal(
+        document.getElementById("successModal")
+    );
+
+    modal.show();
+});
+</script>
 </body>
 
 </html>
