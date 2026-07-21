@@ -2,19 +2,11 @@
 require_once(__DIR__ . '/../common/functions.php');
 ?>
 
-<!DOCTYPE html>
-<html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Figurines</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
+<?php require(__DIR__ . '/../common/header.php'); ?>
 
 <body>
 
-    <?php require(__DIR__ . '/../common/header.php'); ?>
+
 
     <div class="container">
 
@@ -31,7 +23,7 @@ require_once(__DIR__ . '/../common/functions.php');
             foreach ($figurines as $figurine) :
 
                 $imagePath = __DIR__ . '/../public/assets/img/' . $figurine['id'] . '.webp';
-                $image = file_exists($imagePath) ? '/assets/img/' . $figurine['id'] . '.webp' : "https://picsum.photos/300/200";
+                $image = file_exists($imagePath) ? BASE_URL . '/assets/img/' . $figurine['id'] . '.webp' : "https://picsum.photos/300/200";
             ?>
 
                 <div class="col-md-4 mb-4">
@@ -60,14 +52,14 @@ require_once(__DIR__ . '/../common/functions.php');
                 <h3>Envie d'en voir plus ?</h3>
                 <p class="mb-4">Connectez-vous pour accéder à l'intégralité de notre catalogue de figurines.</p>
                 <div>
-                    <a href="connexion" class="btn btn-primary">Se connecter</a>
+                    <a href="<?= BASE_URL ?>/connexion" class="btn btn-primary">Se connecter</a>
                 </div>
             </div>
 
         <?php else : ?>
 
             <div class="text-center my-5">
-                <a href="lire" class="btn btn-primary">Voir tout le catalogue</a>
+                <a href="<?= BASE_URL ?>/lire" class="btn btn-primary">Voir tout le catalogue</a>
             </div>
 
         <?php endif; ?>

@@ -9,19 +9,10 @@ if (!isset($_SESSION['LOGGED_USER'])) {
 ?>
 
 
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <?php require_once(__DIR__ . '/../common/head.php'); ?>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Figurines</title>
-
-</head>
+<?php require_once(__DIR__ . '/../common/header.php'); ?>
 
 <body class="bg-dark">
-    <?php require_once(__DIR__ . '/../common/header.php'); ?>
+
     <div class="col-4 text-light mx-md-5">
         <?php if (isset($_SESSION['LOGGED_USER'])) : ?>
             <strong>Bonjour <?= htmlspecialchars($_SESSION['LOGGED_USER']['login']) ?></strong>
@@ -36,7 +27,7 @@ if (!isset($_SESSION['LOGGED_USER'])) {
         <?php $droits = $_SESSION['LOGGED_USER']['droits'] ?? null; ?>
 
         <?php if (in_array($droits, ['editeur', 'admin'])) : ?>
-            <a class="btn btn-outline-success" href="/ajouter">Ajouter une figurine</a>
+            <a class="btn btn-outline-success" href="<?= BASE_URL ?>/ajouter">Ajouter une figurine</a>
         <?php endif; ?>
     </div>
     <div class="container">
@@ -68,7 +59,7 @@ DESC';
                             <?php
                             $imagePath = __DIR__ . '/../public/assets/img/' . $figurine['id'] . '.webp';
                             if (file_exists($imagePath)) {
-                                $image = '/assets/img/' . $figurine['id'] . '.webp';
+                                $image = BASE_URL . '/assets/img/' . $figurine['id'] . '.webp';
                             } else {
                                 $image = "https://picsum.photos/100/250";
                             }
@@ -91,11 +82,11 @@ DESC';
 
 
                             <?php if ($droits === 'admin') : ?>
-                                <a class="btn btn-outline-danger" href="/supprimer?id=<?= htmlspecialchars($figurine['id']) ?>">Supprimer</a>
-                                <a class="btn btn-outline-warning" href="/modifier?id=<?= htmlspecialchars($figurine['id']) ?>">Modifier</a>
+                                <a class="btn btn-outline-danger" href="<?= BASE_URL ?>/supprimer?id=<?= htmlspecialchars($figurine['id']) ?>">Supprimer</a>
+                                <a class="btn btn-outline-warning" href="<?= BASE_URL ?>/modifier?id=<?= htmlspecialchars($figurine['id']) ?>">Modifier</a>
                             <?php endif; ?>
-                            
-                            <a class="btn btn-outline-primary" href="figurine/<?= $figurine['id'] ?>-<?= slugify($figurine['nom']) ?>.html">En savoir +</a>
+
+                            <a class="btn btn-outline-primary" href="<?= BASE_URL ?>/figurine/<?= $figurine['id'] ?>-<?= slugify($figurine['nom']) ?>.html">En savoir +</a>
                         </div>
                     </div>
                 </div>

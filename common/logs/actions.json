@@ -509,5 +509,200 @@
             "figurine_id": 16
         },
         "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-20 13:00:03",
+        "utilisateur": "admin1",
+        "action": "suppression_figurine",
+        "details": {
+            "figurine_id": 15
+        },
+        "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-20 13:00:14",
+        "utilisateur": "admin1",
+        "action": "modification_figurine",
+        "details": {
+            "figurine_id": 16
+        },
+        "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-20 13:00:38",
+        "utilisateur": "admin1",
+        "action": "modification_figurine",
+        "details": {
+            "figurine_id": 16
+        },
+        "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-20 13:10:30",
+        "utilisateur": "admin1",
+        "action": "deconnexion",
+        "details": [],
+        "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-20 13:10:36",
+        "utilisateur": "lecteur1",
+        "action": "connexion_reussie",
+        "details": [],
+        "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-20 13:11:12",
+        "utilisateur": "lecteur1",
+        "action": "deconnexion",
+        "details": [],
+        "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-20 13:12:11",
+        "utilisateur": "admin1",
+        "action": "connexion_reussie",
+        "details": [],
+        "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-21 06:46:14",
+        "utilisateur": "admin1",
+        "action": "connexion_reussie",
+        "details": [],
+        "ip": "::1"
+    },
+    {
+        "date": "2026-07-21 06:56:49",
+        "utilisateur": "admin1",
+        "action": "deconnexion",
+        "details": [],
+        "ip": "::1"
+    },
+    {
+        "date": "2026-07-21 06:57:07",
+        "utilisateur": "admin1",
+        "action": "connexion_reussie",
+        "details": [],
+        "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-21 06:59:19",
+        "utilisateur": "admin1",
+        "action": "deconnexion",
+        "details": [],
+        "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-21 06:59:24",
+        "utilisateur": "admin1",
+        "action": "connexion_reussie",
+        "details": [],
+        "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-21 07:05:35",
+        "utilisateur": "admin1",
+        "action": "deconnexion",
+        "details": [],
+        "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-21 07:10:51",
+        "utilisateur": "admin1",
+        "action": "connexion_reussie",
+        "details": [],
+        "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-21 07:10:55",
+        "utilisateur": "admin1",
+        "action": "deconnexion",
+        "details": [],
+        "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-21 07:16:33",
+        "utilisateur": "admin1",
+        "action": "connexion_reussie",
+        "details": [],
+        "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-21 07:16:51",
+        "utilisateur": "admin1",
+        "action": "connexion_reussie",
+        "details": [],
+        "ip": "::1"
+    },
+    {
+        "date": "2026-07-21 07:21:07",
+        "utilisateur": "admin1",
+        "action": "deconnexion",
+        "details": [],
+        "ip": "::1"
+    },
+    {
+        "date": "2026-07-21 07:21:24",
+        "utilisateur": "admin1",
+        "action": "connexion_reussie",
+        "details": [],
+        "ip": "::1"
+    },
+    {
+        "date": "2026-07-21 07:29:37",
+        "utilisateur": "admin1",
+        "action": "creation_figurine",
+        "details": {
+            "figurine_id": "17",
+            "nom": "Ezio Auditore"
+        },
+        "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-21 07:29:54",
+        "utilisateur": "admin1",
+        "action": "modification_figurine",
+        "details": {
+            "figurine_id": 17
+        },
+        "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-21 07:30:00",
+        "utilisateur": "admin1",
+        "action": "suppression_figurine",
+        "details": {
+            "figurine_id": 17
+        },
+        "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-21 07:30:55",
+        "utilisateur": "admin1",
+        "action": "creation_figurine",
+        "details": {
+            "figurine_id": "18",
+            "nom": "Bonnet pour chien"
+        },
+        "ip": "::1"
+    },
+    {
+        "date": "2026-07-21 07:31:09",
+        "utilisateur": "admin1",
+        "action": "modification_figurine",
+        "details": {
+            "figurine_id": 18
+        },
+        "ip": "::1"
+    },
+    {
+        "date": "2026-07-21 07:31:23",
+        "utilisateur": "admin1",
+        "action": "suppression_figurine",
+        "details": {
+            "figurine_id": 18
+        },
+        "ip": "::1"
     }
 ]

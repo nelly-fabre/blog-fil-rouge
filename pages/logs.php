@@ -21,18 +21,10 @@ if (file_exists($logFile)) {
 $logs = array_reverse($logs);
 ?>
 
-<!DOCTYPE html>
-<html lang="fr">
-
-<head>
-    <?php require_once(__DIR__ . '/../common/head.php'); ?>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Journal des actions</title>
-</head>
+<?php require_once(__DIR__ . '/../common/header.php'); ?>
 
 <body class="bg-dark text-light">
-    <?php require_once(__DIR__ . '/../common/header.php'); ?>
+
 
     <div class="container my-5">
         <div class="d-flex justify-content-end">
