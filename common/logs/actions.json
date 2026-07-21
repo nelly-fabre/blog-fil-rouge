@@ -704,5 +704,14 @@
             "figurine_id": 18
         },
         "ip": "::1"
+    },
+    {
+        "date": "2026-07-21 07:38:40",
+        "utilisateur": "admin1",
+        "action": "modification_figurine",
+        "details": {
+            "figurine_id": 11
+        },
+        "ip": "::1"
     }
 ]
