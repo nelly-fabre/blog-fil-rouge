@@ -7,7 +7,6 @@ require_once(__DIR__ . '/../common/functions.php');
 <body>
 
 
-
     <div class="container">
 
         <div class="text-center mb-4">

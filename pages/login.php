@@ -1,21 +1,9 @@
 <?php
-
 require_once(__DIR__ . '/../common/connect.php');
 require_once(__DIR__ . '/../common/functions.php');
 ?>
 
-
-
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <?php require_once(__DIR__ . '/../common/head.php'); ?>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+<?php require(__DIR__ . '/../common/header.php'); ?>
 
 <body>
 

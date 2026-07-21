@@ -713,5 +713,182 @@
             "figurine_id": 11
         },
         "ip": "::1"
+    },
+    {
+        "date": "2026-07-21 08:30:04",
+        "utilisateur": "admin1",
+        "action": "deconnexion",
+        "details": [],
+        "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-21 08:51:04",
+        "utilisateur": "invité",
+        "action": "connexion_echouee",
+        "details": {
+            "login_tente": "admin1"
+        },
+        "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-21 08:51:19",
+        "utilisateur": "invité",
+        "action": "connexion_echouee",
+        "details": {
+            "login_tente": "admin1"
+        },
+        "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-21 08:54:27",
+        "utilisateur": "admin1",
+        "action": "deconnexion",
+        "details": [],
+        "ip": "::1"
+    },
+    {
+        "date": "2026-07-21 08:57:53",
+        "utilisateur": "invité",
+        "action": "inscription",
+        "details": {
+            "login": "Nelly"
+        },
+        "ip": "::1"
+    },
+    {
+        "date": "2026-07-21 08:57:58",
+        "utilisateur": "Nelly",
+        "action": "connexion_reussie",
+        "details": [],
+        "ip": "::1"
+    },
+    {
+        "date": "2026-07-21 08:59:26",
+        "utilisateur": "Nelly",
+        "action": "deconnexion",
+        "details": [],
+        "ip": "::1"
+    },
+    {
+        "date": "2026-07-21 08:59:32",
+        "utilisateur": "invité",
+        "action": "connexion_echouee",
+        "details": {
+            "login_tente": "admin1"
+        },
+        "ip": "::1"
+    },
+    {
+        "date": "2026-07-21 08:59:57",
+        "utilisateur": "invité",
+        "action": "connexion_echouee",
+        "details": {
+            "login_tente": "admin1"
+        },
+        "ip": "::1"
+    },
+    {
+        "date": "2026-07-21 09:03:47",
+        "utilisateur": "invité",
+        "action": "connexion_echouee",
+        "details": {
+            "login_tente": "admin1"
+        },
+        "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-21 09:04:27",
+        "utilisateur": "Nelly",
+        "action": "connexion_reussie",
+        "details": [],
+        "ip": "::1"
+    },
+    {
+        "date": "2026-07-21 09:04:29",
+        "utilisateur": "Nelly",
+        "action": "deconnexion",
+        "details": [],
+        "ip": "::1"
+    },
+    {
+        "date": "2026-07-21 09:10:02",
+        "utilisateur": "invité",
+        "action": "inscription",
+        "details": {
+            "login": "Editeur"
+        },
+        "ip": "::1"
+    },
+    {
+        "date": "2026-07-21 09:10:09",
+        "utilisateur": "Editeur",
+        "action": "connexion_reussie",
+        "details": [],
+        "ip": "::1"
+    },
+    {
+        "date": "2026-07-21 09:12:41",
+        "utilisateur": "invité",
+        "action": "inscription",
+        "details": {
+            "login": "Lecteur"
+        },
+        "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-21 09:12:47",
+        "utilisateur": "Lecteur",
+        "action": "connexion_reussie",
+        "details": [],
+        "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-21 09:13:17",
+        "utilisateur": "Lecteur",
+        "action": "deconnexion",
+        "details": [],
+        "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-21 09:13:30",
+        "utilisateur": "Nelly",
+        "action": "connexion_reussie",
+        "details": [],
+        "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-21 09:13:34",
+        "utilisateur": "Nelly",
+        "action": "deconnexion",
+        "details": [],
+        "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-21 09:13:44",
+        "utilisateur": "Editeur",
+        "action": "connexion_reussie",
+        "details": [],
+        "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-21 09:14:52",
+        "utilisateur": "Editeur",
+        "action": "deconnexion",
+        "details": [],
+        "ip": "::1"
+    },
+    {
+        "date": "2026-07-21 09:15:03",
+        "utilisateur": "Editeur",
+        "action": "deconnexion",
+        "details": [],
+        "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-21 09:15:07",
+        "utilisateur": "Nelly",
+        "action": "connexion_reussie",
+        "details": [],
+        "ip": "127.0.0.1"
     }
 ]

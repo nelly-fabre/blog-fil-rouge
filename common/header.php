@@ -29,6 +29,7 @@
     <a href="<?= BASE_URL ?>/deconnexion" class="btn btn-outline-primary">Se déconnecter</a>
 <?php else : ?>
     <a href="<?= BASE_URL ?>/connexion" class="btn btn-outline-primary">Se connecter</a>
+    <a href="<?= BASE_URL ?>/inscription" class="btn btn-primary"> S'inscrire</a>
 <?php endif; ?>
 </li>
     </ul>
