@@ -32,49 +32,40 @@ logAction('suppression_figurine', ['figurine_id' => (int) $postData['id']]);
 ?>
 
 
-<!DOCTYPE html>
-<html lang="fr">
-
-<head>
-    <?php require_once(__DIR__ . '/../common/head.php'); ?>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Article supprimé</title>
-
-</head>
+<?php require(__DIR__ . '/../common/header.php'); ?>
 
 <body>
 
-   <div class="modal fade" id="successModal" tabindex="-1">
-    <div class="modal-dialog">
-        <div class="modal-content">
+    <div class="modal fade" id="successModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
 
-            <div class="modal-header">
-                <h5 class="modal-title">
-                    Article supprimé avec succès !
-                </h5>
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        Article supprimé avec succès !
+                    </h5>
+                </div>
+
+
+                <div class="modal-footer">
+                    <a href="lire" class="btn btn-primary">
+                        Retour
+                    </a>
+                </div>
+
             </div>
-
-            
-            <div class="modal-footer">
-                <a href="lire" class="btn btn-primary">
-                    Retour
-                </a>
-            </div>
-
         </div>
     </div>
-</div>
 
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-    const modal = new bootstrap.Modal(
-        document.getElementById("successModal")
-    );
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const modal = new bootstrap.Modal(
+                document.getElementById("successModal")
+            );
 
-    modal.show();
-});
-</script>
+            modal.show();
+        });
+    </script>
 </body>
 
 </html>

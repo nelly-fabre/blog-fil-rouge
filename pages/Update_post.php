@@ -70,17 +70,7 @@ logAction('modification_figurine', ['figurine_id' => $id]);
      6. AFFICHAGE DE LA PAGE DE CONFIRMATION
      ============================================ -->
 
-<!DOCTYPE html>
-<html>
-
-<head>
-    <?php require_once(__DIR__ . '/../common/head.php'); ?>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>article modifié</title>
-
-</head>
+<?php require(__DIR__ . '/../common/header.php'); ?>
 
 <body class="d-flex flex-column min-vh-100">
     <div class="modal fade" id="successModal" tabindex="-1">

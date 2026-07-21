@@ -61,4 +61,42 @@ $insertStatement->execute([
 
 logAction('inscription', ['login' => $login]);
 
-redirectToUrl('connexion');
+
+?>
+
+<?php require(__DIR__ . '/../common/header.php'); ?>
+
+<body>
+
+    <div class="modal fade" id="successModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        Compte utilisateur créé avec succès !
+                    </h5>
+                </div>
+
+                <div class="modal-footer">
+                    <a href="connexion" class="btn btn-primary">
+                        Merci de vous connecter
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const modal = new bootstrap.Modal(
+                document.getElementById("successModal")
+            );
+
+            modal.show();
+        });
+    </script>
+</body>
+
+</html>
