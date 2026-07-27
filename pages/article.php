@@ -24,19 +24,10 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
 
 ?>
 
-    <!DOCTYPE html>
-    <html lang="fr">
-
-    <head>
-        <?php require_once(__DIR__ . '/../common/head.php'); ?>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Figurines | <?= $figurine ? htmlspecialchars($figurine['nom']) : 'Article introuvable'; ?></title>
-
-    </head>
+    <?php require_once(__DIR__ . '/../common/header.php'); ?>
 
     <body class="bg-dark">
-        <?php require_once(__DIR__ . '/../common/header.php'); ?>
+
 
 
 
@@ -92,7 +83,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
             <div class="col-12">
 
 
-                <a class="btn btn-primary" role="button" href="<?= BASE_URL ?>//lire">RETOUR</a>
+                <a class="btn btn-primary" role="button" href="<?= BASE_URL ?>/lire">RETOUR</a>
 
                 <div id="shareAlert" class="alert"></div>
             </div>

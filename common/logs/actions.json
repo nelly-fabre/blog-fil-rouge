@@ -931,5 +931,26 @@
         "action": "connexion_reussie",
         "details": [],
         "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-21 12:31:11",
+        "utilisateur": "Nelly",
+        "action": "deconnexion",
+        "details": [],
+        "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-21 12:31:17",
+        "utilisateur": "Nelly",
+        "action": "connexion_reussie",
+        "details": [],
+        "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-27 06:45:57",
+        "utilisateur": "Nelly",
+        "action": "connexion_reussie",
+        "details": [],
+        "ip": "127.0.0.1"
     }
 ]
