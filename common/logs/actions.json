@@ -952,5 +952,37 @@
         "action": "connexion_reussie",
         "details": [],
         "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-27 07:29:29",
+        "utilisateur": "Nelly",
+        "action": "deconnexion",
+        "details": [],
+        "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-27 07:29:36",
+        "utilisateur": "invité",
+        "action": "connexion_echouee",
+        "details": {
+            "login_tente": "Truc"
+        },
+        "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-27 07:30:08",
+        "utilisateur": "invité",
+        "action": "connexion_echouee",
+        "details": {
+            "login_tente": "Truc"
+        },
+        "ip": "127.0.0.1"
+    },
+    {
+        "date": "2026-07-27 07:30:14",
+        "utilisateur": "Nelly",
+        "action": "connexion_reussie",
+        "details": [],
+        "ip": "127.0.0.1"
     }
 ]

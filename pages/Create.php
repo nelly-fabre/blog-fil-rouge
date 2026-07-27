@@ -2,20 +2,10 @@
 
 require_once(__DIR__ . '/../common/connect.php');
 require_once(__DIR__ . '/../common/functions.php');
-
+require_once(__DIR__ . '/../common/header.php');
 requireRole(['editeur', 'admin']);
+
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <?php require_once(__DIR__ . '/../common/head.php'); ?>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ajouter un article</title>
-
-</head>
 
 <body>
     <div class="d-flex flex-column">

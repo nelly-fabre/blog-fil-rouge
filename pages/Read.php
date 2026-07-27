@@ -1,6 +1,7 @@
 <?php
 require_once(__DIR__ . '/../common/connect.php');
 require_once(__DIR__ . '/../common/functions.php');
+require_once(__DIR__ . '/../common/header.php');
 
 if (!isset($_SESSION['LOGGED_USER'])) {
     redirectToUrl('connexion'); // au lieu de redirectToUrl('Read.php')
@@ -9,7 +10,7 @@ if (!isset($_SESSION['LOGGED_USER'])) {
 ?>
 
 
-<?php require_once(__DIR__ . '/../common/header.php'); ?>
+
 
 <body class="bg-dark">
 
@@ -27,7 +28,7 @@ if (!isset($_SESSION['LOGGED_USER'])) {
         <?php $droits = $_SESSION['LOGGED_USER']['droits'] ?? null; ?>
 
         <?php if (in_array($droits, ['editeur', 'admin'])) : ?>
-            <a class="btn btn-outline-success" href="<?= BASE_URL ?>/ajouter">Ajouter une figurine</a>
+            <a class="btn btn-outline-success mb-3" href="<?= BASE_URL ?>/ajouter">Ajouter une figurine</a>
         <?php endif; ?>
     </div>
     <div class="container">
